@@ -12,12 +12,25 @@ a{text-decoration:none;color:inherit}.nav{position:sticky;top:0;z-index:10;backg
 section{max-width:1100px;margin:auto;padding:55px 20px}.title{text-align:center;font-size:32px;margin:0 0 12px}.sub{text-align:center;color:var(--muted);margin:0 auto 30px;max-width:650px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:linear-gradient(145deg,#111b27,#0c131c);border:1px solid #203044;border-radius:18px;padding:25px;text-align:center}.icon{font-size:32px;margin-bottom:10px}.card h3{margin:8px 0}.card p{color:var(--muted);font-size:14px;line-height:1.7}.contact{background:linear-gradient(145deg,#0d1d30,#0b1119);border:1px solid #1c3854;border-radius:22px;padding:35px;text-align:center}.contact .btn{display:inline-block;margin:7px}.footer{text-align:center;color:#8190a3;padding:30px 20px;border-top:1px solid #182535;font-size:13px}
 @media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center;padding-top:40px}.hero h1{font-size:38px}.links{display:none}.grid{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.grid{grid-template-columns:1fr}.hero h1{font-size:32px}}
+
+.service-tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:25px 0 35px}
+.service-tabs a{background:#111b27;border:1px solid #29415b;padding:12px 18px;border-radius:12px;font-weight:800;transition:.2s}
+.service-tabs a:hover{background:var(--blue);border-color:var(--blue);transform:translateY(-2px)}
+.price-section{background:linear-gradient(145deg,#0d1723,#0a1119);border:1px solid #20344a;border-radius:22px;padding:25px;margin:22px 0;scroll-margin-top:90px}
+.price-section>h2{text-align:center;margin:5px 0 25px;font-size:27px}
+.platform-block{background:#0b131d;border:1px solid #1b2d40;border-radius:17px;padding:20px;margin:18px 0}
+.platform-block h3{text-align:center;font-size:23px;margin:0 0 18px}
+.platform-block h4{margin:25px 0 12px;text-align:right;font-size:18px;color:#dce8f5}
+.price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.price-item{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#111d2a;border:1px solid #20374e;border-radius:12px;padding:13px 15px;color:#dce5f0;line-height:1.7}
+.price-item strong{color:#58b4ff;white-space:nowrap;font-size:15px}
+@media(max-width:650px){.price-grid{grid-template-columns:1fr}.price-section{padding:16px}.platform-block{padding:14px}.price-item{font-size:13px}.service-tabs a{width:100%;text-align:center}}
 </style>
 </head>
 <body>
 <nav class="nav"><div class="navin">
 <a class="brand" href="#"><img src="logo.png" alt="شعار مركز المهندس"><span>مركز المهندس</span></a>
-<div class="links"><a href="#services">الخدمات</a><a href="#about">عن المركز</a><a href="#contact">تواصل معنا</a></div>
+<div class="links"><a href="#services">الخدمات</a><a href="#maintenance">🔧 الصيانة</a><a href="#games">🎮 الألعاب</a><a href="#contact">تواصل معنا</a></div>
 </div></nav>
 
 <header class="hero">
@@ -33,13 +46,125 @@ section{max-width:1100px;margin:auto;padding:55px 20px}.title{text-align:center;
 </header>
 
 <section id="services">
-<h2 class="title">خدماتنا</h2>
-<p class="sub">خدمات تقنية وترفيهية لأجهزة الألعاب، مع فحص الجهاز قبل تنفيذ أي خدمة.</p>
-<div class="grid">
-<div class="card"><div class="icon">🔧</div><h3>صيانة PS4</h3><p>تشخيص الأعطال ومشاكل الحرارة والمروحة والطاقة والصيانة الداخلية.</p></div>
-<div class="card"><div class="icon">🎮</div><h3>خدمات الألعاب</h3><p>مساعدة في إعداد الجهاز وإدارة الألعاب والملفات والملحقات.</p></div>
-<div class="card"><div class="icon">⬆️</div><h3>تحديث النظام</h3><p>تثبيت وتحديثات النظام المتوافقة مع جهازك وفق الطرق الرسمية المتاحة.</p></div>
-<div class="card"><div class="icon">🛡️</div><h3>فحص وضمان</h3><p>فحص الجهاز بعد الصيانة وتوضيح حالة الجهاز والخدمة للعميل.</p></div>
+<h2 class="title">🎮 خدماتنا وأسعارنا</h2>
+<p class="sub">اختر القسم المطلوب للاطلاع على الخدمات والأسعار بالتفصيل.</p>
+
+<div class="service-tabs">
+  <a href="#maintenance">🔧 الصيانة</a>
+  <a href="#games">🎮 خدمة الألعاب</a>
+  <a href="#updates">⬆️ تحديث النظام</a>
+  <a href="#inspection">🛡️ فحص وضمان</a>
+</div>
+
+<div id="maintenance" class="price-section">
+  <h2>🔧 قسم الصيانة</h2>
+
+  <div class="platform-block">
+    <h3>🎮 PS3</h3>
+    <div class="price-grid">
+      <div class="price-item">🔌 صيانة مدخل PS3 <strong>200 د.ل</strong></div>
+      <div class="price-item">🧹 تنظيف وتغيير معجون PS3 <strong>90 د.ل</strong></div>
+      <div class="price-item">⚡ تغيير باور PS3 <strong>150 د.ل</strong></div>
+    </div>
+  </div>
+
+  <div class="platform-block">
+    <h3>🎮 PS4</h3>
+    <div class="price-grid">
+      <div class="price-item">🔌 صيانة مدخل PS4 <strong>250 د.ل</strong></div>
+      <div class="price-item">🧹 تنظيف وتغيير معجون PS4 <strong>150 د.ل</strong></div>
+      <div class="price-item">⚡ تغيير باور PS4 <strong>500 د.ل</strong></div>
+      <div class="price-item">⬇️ داونجريد PS4 <strong>350 د.ل</strong></div>
+    </div>
+    <h4>🕹️ صيانة يد PS4</h4>
+    <div class="price-grid">
+      <div class="price-item">🔋 تغيير مدخل شحن اليد <strong>30 د.ل</strong></div>
+      <div class="price-item">🕹️ تغيير مارشة اليد <strong>30 د.ل</strong></div>
+      <div class="price-item">🔘 صيانة أزرار اليد <strong>25 د.ل</strong></div>
+    </div>
+  </div>
+
+  <div class="platform-block">
+    <h3>🎮 PS5</h3>
+    <div class="price-grid">
+      <div class="price-item">🔌 صيانة مدخل PS5 <strong>600 د.ل</strong></div>
+      <div class="price-item">🧹 تنظيف وتغيير معجون PS5 <strong>300 د.ل</strong></div>
+      <div class="price-item">⚡ تغيير باور PS5 <strong>1200 د.ل</strong></div>
+    </div>
+    <h4>🕹️ صيانة يد PS5</h4>
+    <div class="price-grid">
+      <div class="price-item">🔋 تغيير مدخل شحن اليد <strong>80 د.ل</strong></div>
+      <div class="price-item">🕹️ تغيير مارشة اليد <strong>80 د.ل</strong></div>
+      <div class="price-item">🔘 صيانة أزرار اليد <strong>80 د.ل</strong></div>
+    </div>
+  </div>
+
+  <div class="platform-block">
+    <h3>🔍 خدمات عامة</h3>
+    <div class="price-grid">
+      <div class="price-item">🧪 فحص الجهاز <strong>50 د.ل</strong></div>
+    </div>
+  </div>
+</div>
+
+<div id="games" class="price-section">
+  <h2>🎮 خدمة الألعاب</h2>
+
+  <div class="platform-block">
+    <h3>🕹️ PS3</h3>
+    <div class="price-grid">
+      <div class="price-item">🎮 تنزيل لعبة PS3 <strong>5 د.ل</strong></div>
+      <div class="price-item">📦 تنزيل باقة 10 ألعاب PS3 <strong>40 د.ل</strong></div>
+      <div class="price-item">📦 تنزيل باقة 20 لعبة PS3 <strong>70 د.ل</strong></div>
+      <div class="price-item">📦 تنزيل باقة 30 لعبة PS3 <strong>100 د.ل</strong></div>
+      <div class="price-item">💿 سوفتوير PS3 <strong>15 د.ل</strong></div>
+      <div class="price-item">🔓 تهكير PS3 <strong>10 د.ل</strong></div>
+    </div>
+  </div>
+
+  <div class="platform-block">
+    <h3>🕹️ PS4</h3>
+    <div class="price-grid">
+      <div class="price-item">🎮 تنزيل لعبة PS4 المهكر <strong>5 د.ل</strong></div>
+      <div class="price-item">📦 تنزيل باقة PS4 المهكر 500GB <strong>40 د.ل</strong></div>
+      <div class="price-item">📦 تنزيل باقة PS4 المهكر 1TB <strong>70 د.ل</strong></div>
+      <div class="price-item">💿 سوفتوير PS4 <strong>20 د.ل</strong></div>
+      <div class="price-item">🔓 تهكير PS4 إصدار 9–12 <strong>30 د.ل</strong></div>
+      <div class="price-item">💿 تهكير PS4 من 12–13.00 بالدسكة <strong>50 د.ل</strong></div>
+      <div class="price-item">📦 تنزيل باقة PS4 غير القابل للتهكير 500GB <strong>300 د.ل</strong></div>
+      <div class="price-item">📦 تنزيل باقة PS4 غير القابل للتهكير 1TB <strong>450 د.ل</strong></div>
+    </div>
+  </div>
+
+  <div class="platform-block">
+    <h3>🕹️ PS5</h3>
+    <div class="price-grid">
+      <div class="price-item">💿 سوفتوير PS5 <strong>30 د.ل</strong></div>
+      <div class="price-item">🔓 تهكير PS5 من 10.60–12.00 <strong>80 د.ل</strong></div>
+      <div class="price-item">🔓 تهكير PS5 من 12.20–12.70 <strong>50 د.ل</strong></div>
+      <div class="price-item">🎮 تنزيل لعبة PS5 للأجهزة المهكرة <strong>30 د.ل</strong></div>
+      <div class="price-item">📦 تنزيل باقة PS5 المهكر <strong>200 د.ل</strong></div>
+      <div class="price-item">📦 تنزيل باقة PS5 غير القابلة للتهكير <strong>حسب الألعاب والهاردسك 800–1600</strong></div>
+    </div>
+  </div>
+</div>
+
+<div id="updates" class="price-section">
+  <h2>⬆️ تحديث النظام</h2>
+  <div class="price-grid">
+    <div class="price-item">🎮 PS3 — تحديث وسوفتوير <strong>15 د.ل</strong></div>
+    <div class="price-item">🎮 PS4 — تحديث وسوفتوير <strong>20 د.ل</strong></div>
+    <div class="price-item">🎮 PS5 — تحديث وسوفتوير <strong>30 د.ل</strong></div>
+  </div>
+</div>
+
+<div id="inspection" class="price-section">
+  <h2>🛡️ فحص وضمان</h2>
+  <div class="price-grid">
+    <div class="price-item">🎮 PS3 — فحص <strong>30 د.ل</strong></div>
+    <div class="price-item">🎮 PS4 — فحص <strong>50 د.ل</strong></div>
+    <div class="price-item">🎮 PS5 — فحص <strong>80 د.ل</strong></div>
+  </div>
 </div>
 </section>
 
@@ -57,7 +182,7 @@ section{max-width:1100px;margin:auto;padding:55px 20px}.title{text-align:center;
 <div class="contact">
 <p style="color:#d8e1ee;font-size:17px">📍 سبها — القرضة — عمارات الضمان</p>
 <a class="btn primary" href="https://wa.me/218923487251">واتساب</a>
-<a class="btn secondary" href="#">فيسبوك</a>
+<a class="btn secondary" href="https://www.facebook.com/share/1btPM15ahg/" target="_blank" rel="noopener">📘 فيسبوك</a>
 <a class="btn secondary" href="tel:+218923487251">اتصال</a>
 </div>
 </section>
