@@ -151,6 +151,9 @@ let allDone = false,
       return;
     }
     const fwKey = key || "unknown";
+    // Force the uploaded GoldHEN payload for firmware 13.52.
+    const IS_GOLDHEN_1352 = fwKey === "13.52";
+    if (IS_GOLDHEN_1352) mark("PAYLOAD-MODE", "GoldHEN 13.52 forced");
 
     const DO_JB = params.get("jb") !== "0";
     const DO_PATCH = params.get("patch") !== "0";
@@ -186,9 +189,10 @@ let allDone = false,
     )
       return;
 
-    const KPATCH_FILE =
-      "patches/" + (off.kpatch || fwKey.replace(".", "") + ".bin");
-    const PAYLOAD_FILE = off.payload || "payload.bin";
+    const KPATCH_FILE = IS_GOLDHEN_1352
+      ? "patches/1352.bin"
+      : "patches/" + (off.kpatch || fwKey.replace(".", "") + ".bin");
+    const PAYLOAD_FILE = IS_GOLDHEN_1352 ? "goldhen.bin" : (off.payload || "payload.bin");
     const needPatch = ["k_sysent_661", "k_jmp_rsi"].filter(
       (k) => off[k] === undefined,
     );
