@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#05070b">
+<title>مركز المهندس | صيانة وخدمات PlayStation</title>
+<style>
+:root{--blue:#087cff;--blue2:#19a4ff;--bg:#030509;--card:#0b111a;--line:#1c3858;--text:#f5f8ff;--muted:#b8c4d4}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 50% 0,#082346 0,#030509 38%,#020306 100%);color:var(--text);font-family:Tahoma,Arial,sans-serif}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(2,5,9,.88);backdrop-filter:blur(14px);border-bottom:1px solid #16304d}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:19px}
+.brand img{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid #087cff}
+.links{display:flex;gap:18px;font-size:14px;color:#dce8f6}
+.links a:hover{color:#39adff}
+.hero{padding:55px 0 35px;text-align:center}
+.hero img{width:min(310px,70vw);border-radius:50%;display:block;margin:0 auto 25px;filter:drop-shadow(0 0 35px rgba(0,126,255,.38))}
+.kicker{color:#1597ff;font-weight:900;font-size:20px}
+h1{font-size:clamp(38px,7vw,70px);margin:8px 0 12px;font-weight:900}
+h1 span{color:#138dff}
+.hero p{max-width:760px;margin:auto;color:var(--muted);font-size:18px;line-height:2}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn{display:inline-block;padding:14px 24px;border-radius:14px;font-weight:900;border:1px solid #294766;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:linear-gradient(135deg,#087cff,#0054ba);border:0}
+.secondary{background:#0d1722}
+section{padding:45px 0}
+.title{text-align:center;font-size:32px;margin:0 0 10px}
+.sub{text-align:center;color:var(--muted);margin:0 auto 28px;line-height:1.9}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.card{background:linear-gradient(145deg,rgba(14,27,42,.96),rgba(6,12,19,.96));border:1px solid var(--line);border-radius:20px;padding:25px 18px;text-align:center;box-shadow:0 12px 35px rgba(0,0,0,.2)}
+.icon{font-size:38px}
+.card h3{margin:12px 0 8px;color:#fff}
+.card p{margin:0;color:var(--muted);line-height:1.8;font-size:14px}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.panel{background:linear-gradient(145deg,#0b1724,#060b12);border:1px solid var(--line);border-radius:22px;padding:28px}
+.panel h3{margin-top:0;color:#1b99ff;font-size:23px}
+.list{padding:0;margin:0;list-style:none}
+.list li{padding:11px 0;border-bottom:1px solid #18283a;color:#dce5f0}
+.list li:last-child{border-bottom:0}
+.contact{text-align:center;background:linear-gradient(145deg,#0c2036,#060b12);border:1px solid #24517c;border-radius:25px;padding:38px 20px}
+.phone{font-size:clamp(28px,6vw,48px);font-weight:900;letter-spacing:1px;direction:ltr;display:inline-block;margin:8px 0 18px;color:#fff}
+.social{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+footer{text-align:center;border-top:1px solid #14263a;padding:28px 15px;color:#91a0b4;font-size:14px}
+.footer-name{margin-top:8px;color:#168cff;font-weight:900;font-size:18px}
+@media(max-width:800px){.links{display:none}.grid{grid-template-columns:1fr 1fr}.info{grid-template-columns:1fr}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.hero{padding-top:35px}.hero p{font-size:15px}.panel{padding:20px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav">
+    <a class="brand" href="#top"><img src="../logo.png" alt="شعار مركز المهندس"><span>مركز المهندس</span></a>
+    <div class="links">
+      <a href="#services">الخدمات</a>
+      <a href="#maintenance">الصيانة</a>
+      <a href="#games">الألعاب</a>
+      <a href="#contact">التواصل</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <img src="../logo.png" alt="مركز المهندس">
+  <div class="kicker">مركز المهندس</div>
+  <h1>صيانة وخدمات <span>PlayStation</span></h1>
+  <p>خبرة • احترافية • ثقة</p>
+  <p>صيانة الأجهزة، تنزيل الألعاب، السوفتوير والتحديثات، التفعيل والخدمات الخاصة بأجهزة الألعاب.</p>
+  <div class="actions">
+    <a class="btn primary" href="https://wa.me/218923487251">📲 تواصل عبر واتساب</a>
+    <a class="btn secondary" href="tel:+218923487251">☎️ اتصل بنا</a>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="title">خدماتنا</h2>
+  <p class="sub">خدمات مركز المهندس لأجهزة الألعاب والكمبيوتر</p>
+  <div class="grid">
+    <article class="card"><div class="icon">🔧</div><h3>صيانة الأجهزة</h3><p>إصلاح أعطال الأجهزة وصيانة المداخل والباور والتنظيف وتغيير المعجون.</p></article>
+    <article class="card"><div class="icon">🎮</div><h3>تنزيل الألعاب</h3><p>تنزيل الألعاب والباقات لأجهزة PlayStation وXbox حسب الجهاز.</p></article>
+    <article class="card"><div class="icon">⚙️</div><h3>سوفتوير وتحديثات</h3><p>تحديث النظام والسوفتوير والخدمات البرمجية المتاحة للجهاز.</p></article>
+    <article class="card"><div class="icon">🛡️</div><h3>فحص وضمان</h3><p>فحص الجهاز وتوضيح المشكلة والخدمة المطلوبة قبل البدء.</p></article>
+  </div>
+</section>
+
+<section id="maintenance">
+  <h2 class="title">🔧 الصيانة</h2>
+  <p class="sub">صيانة أجهزة PS2 وPS3 وPS4 وPS5 وXbox والكمبيوتر.</p>
+  <div class="info">
+    <div class="panel">
+      <h3>PlayStation</h3>
+      <ul class="list">
+        <li>PS2 — صيانة وتجهيز وتنزيل ألعاب</li>
+        <li>PS3 — صيانة وتنظيف وتغيير معجون وباور</li>
+        <li>PS4 — صيانة المداخل والباور والتنظيف</li>
+        <li>PS5 — صيانة المداخل والباور والتنظيف</li>
+        <li>صيانة أيدي PS4 وPS5</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Xbox / PC</h3>
+      <ul class="list">
+        <li>Xbox 360 — صيانة وتهكير وتنزيل ألعاب</li>
+        <li>Xbox One / Series — خدمات الألعاب والاشتراكات</li>
+        <li>PC / Laptop — صيانة وإصلاح الأعطال</li>
+        <li>فحص الجهاز قبل تنفيذ الخدمة</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="games">
+  <h2 class="title">🎮 الألعاب والخدمات البرمجية</h2>
+  <p class="sub">تنزيل الألعاب، الباقات، السوفتوير والتحديثات حسب إصدار الجهاز وإمكاناته.</p>
+  <div class="grid">
+    <article class="card"><div class="icon">🕹️</div><h3>PS2</h3><p>تنزيل ألعاب وباقات وتجهيز الجهاز.</p></article>
+    <article class="card"><div class="icon">🎮</div><h3>PS3</h3><p>ألعاب، باقات، سوفتوير وخدمات الجهاز.</p></article>
+    <article class="card"><div class="icon">🎮</div><h3>PS4</h3><p>ألعاب، سوفتوير وخدمات متوافقة مع إصدار الجهاز.</p></article>
+    <article class="card"><div class="icon">🎮</div><h3>PS5</h3><p>ألعاب وخدمات السوفتوير والتحديثات المتاحة.</p></article>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <h2 class="title">📞 للتواصل والاتصال</h2>
+    <p class="sub">سبها — القرضة — عمارات الضمان</p>
+    <div class="phone">0923487251</div>
+    <div class="social">
+      <a class="btn primary" href="https://wa.me/218923487251">واتساب</a>
+      <a class="btn secondary" href="https://www.facebook.com/share/1btPM15ahg/" target="_blank" rel="noopener">فيسبوك</a>
+      <a class="btn secondary" href="tel:+218923487251">اتصال</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div>مركز المهندس — صيانة وخدمات PlayStation</div>
+  <div class="footer-name">عمر جمعة</div>
+  <div>© 2026 جميع الحقوق محفوظة</div>
+</footer>
+</body>
+</html>
