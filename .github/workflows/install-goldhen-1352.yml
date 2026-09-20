@@ -14,7 +14,7 @@ jobs:
         run: |
           mkdir -p 1352/patches
           curl -L --fail -o 1352/payload2.bin https://raw.githubusercontent.com/raw13g/raw13g.github.io/e1a31790214a114a84ce5cd48d93b4c64cf44806/payload2.bin
-          cp 1352/payload2.bin 1352/goldhen.bin
+          curl -L --fail -o 1352/goldhen.bin https://raw.githubusercontent.com/raw13g/raw13g.github.io/e1a31790214a114a84ce5cd48d93b4c64cf44806/goldhen.bin
           curl -L --fail -o 1352/patches/1302.bin https://raw.githubusercontent.com/raw13g/raw13g.github.io/e1a31790214a114a84ce5cd48d93b4c64cf44806/patches/1302.bin
           curl -L --fail -o 1352/patches/1350.bin https://raw.githubusercontent.com/raw13g/raw13g.github.io/e1a31790214a114a84ce5cd48d93b4c64cf44806/patches/1350.bin
           curl -L --fail -o 1352/patches/1352.bin https://raw.githubusercontent.com/raw13g/raw13g.github.io/e1a31790214a114a84ce5cd48d93b4c64cf44806/patches/1352.bin
